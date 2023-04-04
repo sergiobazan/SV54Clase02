@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import SideBar from './components/SideBar.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Test title" />
+  <SideBar title="Category 1" description="This section has description" />
 </template>
 
 <style scoped>
