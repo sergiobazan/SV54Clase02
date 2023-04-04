@@ -4,17 +4,17 @@
     
         <section>
             <div class="container">
-                <a  href="mailto:venta@library.com">venta@library.com</a> 
+                <a  href="mailto:venta@library.com">{{email}}</a>  
                 <img src="src/img/email.png" /> 
             </div>
 
             <div class="container">
-                <a  href="">981622558</a>
+                <a  href="">{{ number }}</a> 
                 <img src="src/img/telefono.png" />
             </div>
 
             <div class="container">
-                <a  href="">Los Manzanos 398</a>
+                <a  href="">{{ direction }}</a>  
                 <img src="src/img/map.png" />
             </div>
         
@@ -27,7 +27,13 @@
 <script>
   
   export default {
-      name:"footer"
+      name:"footer",
+      props:{
+        email:String,
+        number:String,
+        direction:String
+
+      }
       
   }
   

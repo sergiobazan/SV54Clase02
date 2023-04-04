@@ -13,7 +13,7 @@ import footerComponent from './components/footer-component.vue';
     </a>
   </div>
   <HelloWorld msg="Test title" />
-  <footerComponent />
+  <footerComponent email="venta@library.com" number="981622558" direction="Los Manzanos 398"/>
 </template>
 
 <style scoped>
