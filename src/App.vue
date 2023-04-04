@@ -1,9 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import SideBar from './components/SideBar.vue';
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
+  <Navbar title="Library UPC"/>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
