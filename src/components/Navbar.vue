@@ -8,14 +8,16 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  props: {
+    title: String
+  }
 }
 </script>
 
 <style scoped>
 .header{
   display: flex;
-  height: 150px;
   align-items: center;
 }
 
@@ -23,10 +25,4 @@ export default {
   color: black;
 }
 
-.user_pic{
-  width:100px;
-  height:100px;
-  color: grey;
-  border-radius:100%
-}
 </style>

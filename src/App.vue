@@ -1,45 +1,67 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 
 import footerComponent from './components/footer-component.vue';
 
 import SideBar from './components/SideBar.vue';
 import Navbar from "./components/Navbar.vue";
+import TutorialCard from "./components/TutorialCard.vue"
 
 </script>
 
 <template>
-  <Navbar title="Library UPC"/>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
 
-  </div> 
-   
-  
+  <main>
 
-  
-  <HelloWorld msg="Test title" />
-  <footerComponent email="venta@library.com" number="981622558" direction="Los Manzanos 398"/>
-  <SideBar title="Category 1" description="This section has description" />
+    <Navbar title="Library UPC"/>
+
+    <div class="container">
+      <div class="left-container">
+        <SideBar title="Category 1" description="This section has description" />
+        <SideBar title="Category 2" description="This section has description" />
+        <SideBar title="Category 3" description="This section has description" />
+        <SideBar title="Category 4" description="This section has description" />
+      </div>
+      <div class="right-container">
+        <TutorialCard title="Tutorial 1" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
+        <TutorialCard title="Tutorial 2" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
+        <TutorialCard title="Tutorial 3" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
+        <TutorialCard title="Tutorial 4" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
+      </div>
+    </div>
+    
+    <footerComponent email="venta@library.com" number="981622558" direction="Los Manzanos 398"/>
+
+  </main>
 
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-right: 1px solid black;
+  padding: 0 .5rem;
+}
+
+.right-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 </style>
