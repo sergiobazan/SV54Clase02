@@ -47,7 +47,7 @@ footer{
     background-color: black;
     padding: 2rem;
     color:white;
-    margin-top: 790px;
+    margin-top: 390px;
     
     
     
