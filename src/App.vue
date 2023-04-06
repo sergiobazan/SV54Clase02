@@ -5,6 +5,7 @@ import footerComponent from './components/footer-component.vue';
 import SideBar from './components/SideBar.vue';
 import Navbar from "./components/Navbar.vue";
 import TutorialCard from "./components/TutorialCard.vue"
+import LeftSide from './components/LeftSide.vue';
 
 </script>
 
@@ -16,10 +17,7 @@ import TutorialCard from "./components/TutorialCard.vue"
 
     <div class="container">
       <div class="left-container">
-        <SideBar title="Category 1" description="This section has description" />
-        <SideBar title="Category 2" description="This section has description" />
-        <SideBar title="Category 3" description="This section has description" />
-        <SideBar title="Category 4" description="This section has description" />
+        <LeftSide />
       </div>
       <div class="right-container">
         <TutorialCard title="Tutorial 1" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
