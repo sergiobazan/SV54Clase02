@@ -1,6 +1,18 @@
 <template>
     <form>
-        <!-- Inputs van aqui -->
+      <div>
+        <h2>Code: </h2>
+        <InputMask id="basic" v-model="value" mask="99-999999" placeholder="99-999999" />
+        <Button label="Validate"/>
+      </div>
+      <div>
+        <h2>Name: </h2>
+        <pv-inputText placeholder="Product name"/>
+      </div>
+      <div>
+        <h2>Category: </h2>
+        <pv-dropdown v-model="selectedCat" :options="categorias" optionLabel="name" placeholder="Category" class="w-full md:w-14rem" />
+      </div>
         
         <!-- calendario -->
         <label for="date">Date added:</label>
@@ -22,9 +34,21 @@
 
 <script>
     export default {
-        name: 'Form'
+        name: 'Form',
+      data() {
+          return {
+            selectedCat: null,
+            categorias : [
+              { name: 'Food', code: '001' },
+              { name: 'Appliances', code: '002' },
+              { name: 'Electronics', code: '003' }
+            ]
+          }
+      }
     }
+
 </script>
+
 
 <style>
 form {
