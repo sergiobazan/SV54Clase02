@@ -25,3 +25,16 @@
         name: 'Form'
     }
 </script>
+
+<style>
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 100%;
+}
+</style>
