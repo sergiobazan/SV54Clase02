@@ -6,6 +6,7 @@ import SideBar from './components/SideBar.vue';
 import Navbar from "./components/Navbar.vue";
 import TutorialCard from "./components/TutorialCard.vue"
 import LeftSide from './components/LeftSide.vue';
+import Form from './components/Form.vue';
 
 </script>
 
@@ -16,15 +17,8 @@ import LeftSide from './components/LeftSide.vue';
     <Navbar title="Library UPC"/>
 
     <div class="container">
-      <div class="left-container">
-        <LeftSide />
-      </div>
-      <div class="right-container">
-        <TutorialCard title="Tutorial 1" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
-        <TutorialCard title="Tutorial 2" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
-        <TutorialCard title="Tutorial 3" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
-        <TutorialCard title="Tutorial 4" description="Full Description Category" image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/511RGYIWCJL.jpg" /> 
-      </div>
+
+      <Form />
     </div>
     
     <footerComponent email="venta@library.com" number="981622558" direction="Los Manzanos 398"/>
@@ -44,7 +38,8 @@ main {
 .container {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid black;
 }
 
