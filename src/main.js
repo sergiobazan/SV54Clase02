@@ -17,9 +17,10 @@ import InputText from "primevue/inputtext";
 import InputMask from "primevue/inputmask";
 import Dropdown from "primevue/dropdown";
 
-
 import Checkbox from 'primevue/checkbox';
 import RadioButton from 'primevue/radiobutton';
+
+import i18n from "./locales/i18n.js";
 
 const app = createApp(App);
 
@@ -34,4 +35,5 @@ app.component('RadioButton',RadioButton);
 app.component('Textarea',Textarea)
 
 app.use(PrimeVue);
+app.use(i18n);
 app.mount("#app");

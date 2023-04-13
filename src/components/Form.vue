@@ -1,21 +1,16 @@
 <template>
     <form>
 
-      <div>
-        <h2>Code: </h2>
+      <label for ="code">{{ $t('Code')}}</label>
         <InputMask id="basic" v-model="value" mask="99-999999" placeholder="99-999999" />
         <Button label="Validate"/>
-      </div>
-      <div>
-        <h2>Name: </h2>
-        <pv-inputText placeholder="Product name"/>
-      </div>
-      <div>
-        <h2>Category: </h2>
-        <pv-dropdown v-model="selectedCat" :options="categorias" optionLabel="name" placeholder="Category" class="w-full md:w-14rem" />
-      </div>
 
-        
+      <label for="name">{{ $t('Name')}}</label>
+      <pv-inputText placeholder="Product name"/>
+
+      <label for="category">{{ $t('Category')}}</label>
+      <pv-dropdown v-model="selectedCat" :options="categorias" optionLabel="name" placeholder="Category" class="w-full md:w-14rem" />
+
         <label for="date">Date added:</label>
         <Calendar id="date" v-model="date" dateFormat="dd/mm/yy" />
         
