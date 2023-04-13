@@ -11,13 +11,13 @@
       <label for="category">{{ $t('Category')}}</label>
       <pv-dropdown v-model="selectedCat" :options="categorias" optionLabel="name" placeholder="Category" class="w-full md:w-14rem" />
 
-        <label for="date">Date added:</label>
+        <label for="date">{{ $t('Date') }} </label>
         <Calendar id="date" v-model="date" dateFormat="dd/mm/yy" />
         
-        <label for="inputnumber">Cuantity:</label>
+        <label for="inputnumber"> {{ $t('Cuantity') }}  </label>
         <InputNumber id="inputnumber" v-model="value2" inputId="withoutgrouping" :useGrouping="false" />
 
-        <label for="description">Description:</label>
+        <label for="description">{{ $t('Description') }}</label>
         <Textarea v-model="value" rows="5" cols="30" />
 
       <div class="digital-version">
