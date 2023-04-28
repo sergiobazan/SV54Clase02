@@ -5,17 +5,17 @@
         <section>
             <div class="container">
                 <a  href="mailto:venta@library.com">{{email}}</a>  
-                <img src="src/img/email.png" /> 
+                <!-- <img src="src/img/email.png" />  -->
             </div>
 
             <div class="container">
                 <a  href="">{{ number }}</a> 
-                <img src="src/img/telefono.png" />
+                <!-- <img src="src/img/telefono.png" /> -->
             </div>
 
             <div class="container">
                 <a  href="">{{ direction }}</a>  
-                <img src="src/img/map.png" />
+                <!-- <img src="src/img/map.png" /> -->
             </div>
         
         </section>
